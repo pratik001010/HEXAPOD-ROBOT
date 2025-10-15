@@ -1,8 +1,7 @@
 
-    # 🤖 HEXAPOD-ROBOT
 
 
-### 🦿 Overview
+###  Overview
 A **six-legged hexapod robot** with **18° of freedom**, designed for dynamic locomotion, terrain adaptability, and autonomous control. Each leg is powered by **three servo motors** to enable complex, multi-axis movements for walking, turning, and balancing.
 <p align="center">
   <img src="https://raw.githubusercontent.com/pratik001010/HEXAPOD-ROBOT/main/hexapod.jpg"
@@ -26,7 +25,7 @@ This project demonstrates **bio-inspired robotics** and explores **inverse kinem
 | **Input Interface** | Joystick + Switches | Analog Input | Provides intuitive, manual control over movement, orientation, and gait mode. |
 
 ---
-### 🔋 Key Features
+###  Key Features
 - 18° of freedom for smooth, stable locomotion  
 - Modular servo-driven leg mechanism  
 - Real-time **wireless control** using nRF24L01 (2.4 GHz)  
@@ -37,7 +36,7 @@ This project demonstrates **bio-inspired robotics** and explores **inverse kinem
 
 ---
 
-### 🧠 Working Principle
+###  Working Principle
 The hexapod’s walking behavior is based on **tripod gait**, where three legs stay in contact with the ground while the other three move forward.  
 Inverse kinematics equations compute joint angles for each servo in real time, ensuring synchronized, stable motion across uneven terrain.
 
@@ -53,7 +52,7 @@ Wireless data from the **remote (Arduino Nano)** is transmitted via **nRF24L01**
 
 ---
 
-### 🧰 Components Used
+###  Components Used
 | Component | Quantity | Function |
 |------------|-----------|-----------|
 | Arduino Mega 2560 | 1 | Main controller for hexapod body |
@@ -66,7 +65,7 @@ Wireless data from the **remote (Arduino Nano)** is transmitted via **nRF24L01**
 | Power Distribution Board | 1 | Servo and controller power management |
 
 ---
-### 🧮 Control Logic
+###  Control Logic
 1. **Joystick Input:**  
    Captures analog signals for forward/backward, rotation, and lateral movement.  
 2. **Data Encoding:**  
@@ -79,7 +78,7 @@ Wireless data from the **remote (Arduino Nano)** is transmitted via **nRF24L01**
    Servo commands are sent simultaneously to all legs, creating smooth, stable motion.
 
 ---
-### 🧩 Future Improvements
+###  Future Improvements
 - Add **IMU (MPU6050)** for balance feedback  
 - Integrate **ultrasonic sensors** for obstacle avoidance  
 - Implement **autonomous path planning**  
